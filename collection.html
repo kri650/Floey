@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Collection</title>
+    <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">Shop Collection</div>
+        <div class="nav-links">
+            <a href="floe.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="new.html">New Arrivals</a>
+            <a href="#">Cart</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search products, brands...">
+            <button class="search-btn">Search</button>
+        </div>
+    </nav>
+
+    <!-- Models Section (Showcasing Dresses) -->
+    <section class="models">
+        <h2>Featured Models</h2>
+        <div class="model-container">
+            <!-- Model 1 -->
+             <div class="zoom-container">
+            <div class="model">
+               <a href="jew.html"> <img src="8f23e901908bc36fdd60cb85cf79394e.jpg" alt="Model Dress 1"></a>
+                <p>Accessories</p>
+            </div>
+            </div>
+            <!-- Model 2 -->
+             <div class="zoom-container">
+            <div class="model">
+                <a href="shoes.html"><img src="ab133f5bb896cfee530f3df0d666bba4.jpg" alt="Model Dress 2"></a>
+                <p>Aesthetic shoes</p>
+            </div>
+            </div>
+            <!-- Model 3 -->
+             <div class="zoom-container">
+            <div class="model">
+                <a href="dresses.html"><img src="37efa697a8fe73f6eb20c13dc4c86388.jpg" alt="Model Dress 3"></a>
+                <p>Elegant Dresses</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Collection Page -->
+    <div class="container">
+        <!-- Sidebar Filters -->
+        <div class="sidebar">
+            <h3>Filters</h3>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option>All</option>
+                <option>Clothing</option>
+                <option>Footwear</option>
+                <option>Accessories</option>
+            </select>
+
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="1000" step="10" />
+            <span>$0 - $1000</span>
+
+            <label for="color">Color:</label>
+            <select id="color">
+                <option>All Colors</option>
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Black</option>
+                <option>White</option>
+                <option>Pink</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size">
+                <option>All Sizes</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+            </select>
+
+            <label for="rating">Rating:</label>
+            <select id="rating">
+                <option>All Ratings</option>
+                <option>4 stars & above</option>
+                <option>3 stars & above</option>
+                <option>2 stars & above</option>
+                <option>1 star & above</option>
+            </select>
+
+            <label for="pattern">Pattern:</label>
+            <select id="pattern">
+                <option>All Pattern</option>
+                <option>Floral</option>
+                <option>Striped </option>
+                <option>Solid</option>
+                <option>Plain</option>
+            </select>
+        </div>
+
+        <!-- Products Display Section -->
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="pexels-eugenia-remark-5767088-15791203.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Red Dress</h4>
+                    <p class="price">$99.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="9bf753c785f0deb3704d698318077b62.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Blue Shirt</h4>
+                    <p class="price">$49.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="18a7de1a900fe5d10febe14642b98252.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Black Jeans</h4>
+                    <p class="price">$79.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="ddb16f6bca5d35187000d062a5b3667d.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>White Sneakers</h4>
+                    <p class="price">$89.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="e62f4d53801c332ff46f98b577653f31.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Pink Blouse</h4>
+                    <p class="price">$59.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <img src="c937af98fb89d617a21bc43706384160.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Black Jacket</h4>
+                    <p class="price">$119.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <img src="pexels-vo-van-ti-n-2037497312-29544110.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <img src="pexels-ba-tik-3754162.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Casual T-shirt</h4>
+                    <p class="price">$39.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="1163ec159379021fbff59aea1052c0d3.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="20974a9f5cb9f0e5d4ee13c0932fc7b0.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="19d9d8475ce8a4bde1f32472a332a01e.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="a9dbf3a4ee3bf794bffc5cde7486def5.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="2d631b5c732099b48cdd83204d9668fc.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="photoshoot-ideas-034-1.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="pexels-pedrofurtadoo-29579401.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="pexels-anastasia-nagibina-1116204043-29561801.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="e1e0fce60232efdf98709f32044a5b51.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="565cb9b6879d55eee019aa5e070bc885.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="6ba63d4f917f3a9b746cbe824b92754d.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="3b7d473724f11adfac303731a738d3eb.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h4>Green Skirt</h4>
+                    <p class="price">$69.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

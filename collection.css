@@ -1,0 +1,201 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Models Section (Showcasing Dresses) */
+.models {
+    background-color: #222;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.models h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.model-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.model {
+    text-align: center;
+}
+
+.model img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.model p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/* Container for the main content */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Sidebar (filters) */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar select, .sidebar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.sidebar span {
+    display: block;
+    text-align: right;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-info {
+    margin-top: 15px;
+}
+
+.product-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #555;
+}
+
+
+.product-info .price {
+    font-size: 16px;
+    color: #f00;
+    margin: 10px 0;
+}
+
+.product-info .btn {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-info .btn:hover {
+    background-color: #333;
+}
+/* Container for the image */
+.zoom-container {
+    position: relative;
+    overflow: hidden; /* Ensures that the zoomed part of the image is not visible outside the container */
+}
+
+/* Image itself */
+.zoom-container img {
+    width: 100%; /* Make sure the image takes up the full width of its container */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+/* Zoom-in effect when hovered */
+.zoom-container:hover img {
+    transform: scale(1.2); /* Increase the size of the image */
+}
