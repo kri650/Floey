@@ -177,3 +177,60 @@ body {
 .footer .social-links a:hover {
     color: white;
 }
+/* Basic Styles for Normal Mode */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+footer {
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode #products {
+    background-color: #222;
+    color: #ddd6d6;
+}
+body.dark-mode .product {
+    background-color: #222;
+    color: #ddd6d6;
+}
+
+/* Theme Switcher */
+.theme-switch-label {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #ccc;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.theme-switch {
+    display: none;
+}
+
+.theme-switch:checked + .theme-switch-label {
+    background-color: #555;
+}
